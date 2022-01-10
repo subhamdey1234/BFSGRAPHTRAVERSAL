@@ -1,6 +1,6 @@
 from collections import defaultdict
 
-# Generate adjacency list for undirected graph
+
 def generateAdjacencyLst(edges):
     adjacencyList = defaultdict(list)
     for u, v in edges:
@@ -29,4 +29,4 @@ def bfs(adjacencyList, vertex):
                 queue.append(neighbor)
     return result
 
-print(bfs(adjacencyList, "A"))
+print(bfs(adjacencyList, "B"))
